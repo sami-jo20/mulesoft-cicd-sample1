@@ -18,3 +18,5 @@ stage ('Test'){
           bat 'mvn package deploy -DmuleDeploy'
 }
 }
+}
+}
