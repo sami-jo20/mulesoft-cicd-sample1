@@ -13,5 +13,8 @@ stage ('Deploy'){
           bat 'mvn package deploy -DmuleDeploy'
 }
 }
+stage ('Test'){
+     steps {
+          bat 'mvn package deploy -DmuleDeploy'
 }
 }
