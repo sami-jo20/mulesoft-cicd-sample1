@@ -8,12 +8,12 @@ steps {
      bat 'mvn clean install'
      }
    }
-stage ('Deploy'){
+stage ('Test'){
      steps {
           bat 'mvn package deploy -DmuleDeploy'
 }
 }
-stage ('Test'){
+stage ('Deploy'){
      steps {
           bat 'mvn package deploy -DmuleDeploy'
 }
